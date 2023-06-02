@@ -43,7 +43,6 @@ const Disemvowel = () => {
             }
         }
     })
-    return null;
 }
 
 export default Disemvowel;

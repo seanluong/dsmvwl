@@ -7,7 +7,6 @@ function IndexPopup() {
 
   async function handleClick(command) {
     const resp = await sendToContentScript({ name: command });
-    console.log(resp);
     if (resp === 'disemvoweled') {
       setDisemvoweled(true);
     } else if (resp === 'reset') {
