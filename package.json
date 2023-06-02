@@ -1,7 +1,7 @@
 {
   "name": "dsmvwl",
   "displayName": "Dsmvwl",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Disemvoweling a page's content",
   "author": "Sean Luong",
   "scripts": {
