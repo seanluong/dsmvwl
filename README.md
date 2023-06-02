@@ -2,32 +2,18 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 ## Getting Started
 
-First, run the development server:
+To build the extension in your local machine, run
 
-```bash
-pnpm dev
-# or
-npm run dev
+```
+yarn run build
 ```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+From here you can install the extension to your browser using the built artifact.
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+## How to use
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+<img width="1656" alt="Screenshot 2023-06-02 at 2 18 06 AM" src="https://github.com/seanluong/dsmvwl/assets/74216448/ac873a37-9f9c-47c2-8b7b-e5c430c9ac95">
 
-## Making production build
-
-Run the following:
-
-```bash
-pnpm build
-# or
-npm run build
-```
-
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
-
-## Submit to the webstores
-
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+The extension's popup has a very simple UI that consists of 2 buttons.
+- `Disemvowel`: clicking on this button will remove all the vowels in the textual content of the page in the currently active tab
+- `Reset`: clicking on this button will reset the textual content back to its original state.
