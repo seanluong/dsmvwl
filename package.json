@@ -28,8 +28,8 @@
     "typescript": "5.0.4"
   },
   "manifest": {
-    "host_permissions": [
-      "https://*/*"
+    "permissions": [
+      "activeTab"
     ]
   }
 }
